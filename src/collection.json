@@ -1,0 +1,10 @@
+{
+  "$schema":
+    "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "docker": {
+      "description": "A schematic for Docker support.",
+      "factory": "./docker/index#docker"
+    }
+  }
+}
