@@ -1,6 +1,6 @@
 {
-  "name": "@skeletons/schematics-docker",
-  "version": "0.0.1",
+  "name": "schematics-docker",
+  "version": "0.0.4",
   "description": "A schematics for Docker",
   "scripts": {
     "build": "tsc -p tsconfig.json",
