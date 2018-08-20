@@ -9,7 +9,7 @@ const collectionPath = path.join(__dirname, '../collection.json');
 describe('docker', () => {
   it('works', () => {
     const runner = new SchematicTestRunner('schematics', collectionPath);
-    const tree = runner.runSchematic('my-schematic', {}, Tree.empty());
+    const tree = runner.runSchematic('docker', {}, Tree.empty());
 
     expect(tree.files).toEqual([]);
   });

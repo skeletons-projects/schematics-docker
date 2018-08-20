@@ -1,21 +1,23 @@
 {
-  "name": "schematics-docker",
-  "version": "0.0.4",
-  "description": "A schematics for Docker",
+  "name": "docker",
+  "version": "1.0.0",
+  "description": "A blank schematics",
   "scripts": {
     "build": "tsc -p tsconfig.json",
-    "test": "npm run build && jasmine **/*_spec.js"
+    "test": "npm run build && jasmine src/**/*_spec.js"
   },
-  "keywords": ["schematics"],
+  "keywords": [
+    "schematics"
+  ],
   "author": "",
   "license": "MIT",
   "schematics": "./src/collection.json",
   "dependencies": {
-    "@angular-devkit/core": "0.3.1",
-    "@angular-devkit/schematics": "0.3.1",
-    "@types/jasmine": "2.6.0",
-    "@types/node": "8.0.31",
-    "jasmine": "2.8.0",
-    "typescript": "2.5.2"
+    "@angular-devkit/core": "^0.7.4",
+    "@angular-devkit/schematics": "^0.7.4",
+    "@types/jasmine": "^2.6.0",
+    "@types/node": "^8.0.31",
+    "jasmine": "^2.8.0",
+    "typescript": "^2.5.2"
   }
 }
