@@ -11,6 +11,6 @@ describe('docker', () => {
     const runner = new SchematicTestRunner('schematics', collectionPath);
     const tree = runner.runSchematic('docker', {}, Tree.empty());
 
-    expect(tree.files).toEqual([]);
+    expect(tree.files).toEqual(['/Dockerfile']);
   });
 });

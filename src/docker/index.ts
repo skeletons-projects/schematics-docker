@@ -5,7 +5,7 @@ import { Rule, SchematicContext, Tree } from '@angular-devkit/schematics';
 // per file.
 export function docker(): Rule {
   return (tree: Tree, _context: SchematicContext) => {
-    return tree.create("DockerFile", 
+    return tree.create("Dockerfile", 
     `
 FROM node:9.5 as node
 WORKDIR /app
