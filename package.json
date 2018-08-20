@@ -1,5 +1,5 @@
 {
-  "name": "docker",
+  "name": "schematics-docker",
   "version": "1.0.0",
   "description": "A blank schematics",
   "scripts": {
