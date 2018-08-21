@@ -3,7 +3,8 @@
   "schematics": {
     "docker": {
       "description": "A blank schematic.",
-      "factory": "./docker/index#docker"
+      "factory": "./docker/index#docker",
+      "schema": "./docker/schema.json"
     }
   }
 }

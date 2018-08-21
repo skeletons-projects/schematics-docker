@@ -1,9 +1,7 @@
-import { Rule, SchematicContext, Tree } from '@angular-devkit/schematics';
+import { Rule, SchematicContext, Tree  } from '@angular-devkit/schematics';
+import {Schema as DockerOptions} from './schema'
 
-
-// You don't have to export the function as default. You can also have more than one rule factory
-// per file.
-export function docker(): Rule {
+export function docker(options: DockerOptions): Rule {
   return (tree: Tree, _context: SchematicContext) => {
     return tree.create("Dockerfile", 
     `
@@ -15,7 +13,7 @@ COPY ./ /app/
 RUN npm run build -- --prod
 
 FROM nginx:1.13
-COPY --from=node /app/dist/App /usr/share/nginx/html
+COPY --from=node /app/dist/${options.project} /usr/share/nginx/html
     `);
   };
 }
