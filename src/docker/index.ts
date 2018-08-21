@@ -7,7 +7,7 @@ export function docker(): Rule {
   return (tree: Tree, _context: SchematicContext) => {
     return tree.create("Dockerfile", 
     `
-FROM node:9.5 as node
+FROM node:10 as node
 WORKDIR /app
 COPY package*.json /app/
 RUN npm install
