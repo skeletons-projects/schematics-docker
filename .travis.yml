@@ -1,3 +1,9 @@
 language: node_js
 node_js:
   - 10
+deploy:
+  provider: npm
+  email: "demey.emmanuel@gmail.com"
+  api_key: NPM
+  on:
+    branch: master
