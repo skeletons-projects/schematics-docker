@@ -9,6 +9,9 @@ describe("docker", () => {
     const runner = new SchematicTestRunner("schematics", collectionPath);
     const tree = runner.runSchematic("docker", {}, Tree.empty());
 
-    expect(tree.files).toEqual(["/Dockerfile", "/config/nginx.conf"]);
+    console.log(tree.files);
+    expect(tree.files).toContain("/Dockerfile");
+    expect(tree.files).toContain("/.dockerignore");
+    expect(tree.files).toContain("/config/nginx.conf");
   });
 });

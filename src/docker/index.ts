@@ -152,6 +152,16 @@ http {
 }
     `
     );
+
+    tree.create(
+      ".dockerignore",
+      `
+.git
+node_modules
+npm-debug
+config
+    `
+    );
     return tree.create(
       "Dockerfile",
       `
