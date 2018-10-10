@@ -5,7 +5,7 @@ deploy:
   provider: npm
   email: demey.emmanuel@gmail.com
   api_key:
-    secure: eCdm6ZufUi+q+ONpmVxo5Mp7QpiO6yvBodphXTSN//RK1/Bx6MI8gJt5fwSLOO4J/JCRpifSxOKmsRs2MjFbvNiMiOgtkSqpzyzrbTs6lmXQ2CzhljzVStn194sguehzP7eCo+M1sljhi8EjxKSpIa8q5E8KCRa569gBvNQut8FEymG5CnMQ85MAQ80ZA+bvqDNqG8NSBpOm2XgL+uJY+HtDbu24akuw6Fss/TAiVvA48hgUdExsZW269UWztp5NzjnicwV6P0Vkf6XvXUmHcYAoJ6NDY0bxx6hVSGn6bS07ZmJepb7VWhb9wQ180w8/cbddqh/etpPvVp/WNF5mrnKW4PPcqB6D/j90uwpCrL6fDywCqAYQ3ZgE0vxPM1SbSdsAVRXfUpaUlDyKOYaNlRcr4LHPP3oZdSxAV30eoWjo6iieWK8grPe/vw28YukLUwcTnjtZChv1G027MMQoHAhYTEtKbY2lvKoai9gZMczj+HQI5qHEYNo/ayG/tNL4EyBBmi8WgWtXmdcKc2GVxUWcgHLG0NBqpwwwBXjsVnoUWpd1Rb77C0vgLJ860sajr/GGxnHoOzG+8EpjZUQhqNPOEGmiT90rgdS6kCmBnKSJMv/G5hk9Y9c/XvbuDNmSqhhmmsUM1x+wXFUyzxnGM7HfRlYkWNpGjG5tmSIAY0I=
+    secure: $NPM_SECRET
   on:
     repo: skeletons-projects/schematics-docker
     branch: master
