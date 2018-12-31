@@ -1,6 +1,6 @@
 {
   "name": "schematics-docker",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "A blank schematics",
   "scripts": {
     "build": "tsc -p tsconfig.json",
@@ -13,16 +13,16 @@
   "license": "MIT",
   "schematics": "./src/collection.json",
   "dependencies": {
-    "@angular-devkit/core": "^0.7.4",
-    "@angular-devkit/schematics": "^0.7.4",
-    "@types/jasmine": "^2.6.0",
-    "@types/node": "^8.0.31",
-    "jasmine": "^2.8.0",
-    "typescript": "^2.5.2"
+    "@angular-devkit/core": "7.1.4",
+    "@angular-devkit/schematics": "7.1.4",
+    "@types/jasmine": "3.3.5",
+    "@types/node": "10.12.18",
+    "jasmine": "3.3.1",
+    "typescript": "3.2.2"
   },
   "devDependencies": {
-    "husky": "1.1.1",
-    "npm-run-all": "4.1.3"
+    "husky": "1.3.1",
+    "npm-run-all": "4.1.5"
   },
   "husky": {
     "hooks": {
