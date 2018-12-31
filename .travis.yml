@@ -7,5 +7,5 @@ deploy:
   api_key:
     secure: $NPM_SECRET
   on:
-    repo: skeletons-projects/schematics-docker
+    repo: DX-DeveloperExperience/schematics-docker
     branch: master
